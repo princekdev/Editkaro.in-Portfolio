@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editkaro.in — Video Editing & Social Media Marketing Agency</title>
+<meta name="description" content="Editkaro.in is a premium video editing and social media marketing agency crafting scroll-stopping reels, YouTube edits, gaming highlights, ad films and brand content that get results.">
+<meta name="keywords" content="video editing agency, social media marketing, reels editing, youtube editing, motion graphics, color grading, editkaro">
+<meta name="author" content="Editkaro.in">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Editkaro.in — Frame by Frame, We Build Attention">
+<meta property="og:description" content="Premium video editing & social media marketing agency. 500+ videos edited, 25M+ views generated.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://editkaro.in">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__mark">
+    <span>E</span><span>D</span><span>I</span><span>T</span>
+  </div>
+  <div class="loader__bar"><span></span></div>
+  <div class="loader__code">00:00:00:00</div>
+</div>
+
+<!-- ===================== SCROLL PROGRESS (timeline scrubber) ===================== -->
+<div class="scrub-track" aria-hidden="true"><div class="scrub-fill" id="scrubFill"></div></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="Editkaro.in home">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="32" height="32" rx="9" stroke="url(#gradLogo)" stroke-width="1.5"/>
+        <path d="M13 10.5L23 17L13 23.5V10.5Z" fill="url(#gradLogo)"/>
+        <defs>
+          <linearGradient id="gradLogo" x1="1" y1="1" x2="33" y2="33" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF4D2E"/>
+            <stop offset="1" stop-color="#7B61FF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>Editkaro<em>.in</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about" data-link>About</a>
+      <a href="#services" data-link>Services</a>
+      <a href="#portfolio" data-link>Portfolio</a>
+      <a href="#testimonials" data-link>Reviews</a>
+      <a href="#contact" data-link>Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--sm btn--primary">Start a project</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" data-link>About</a>
+    <a href="#services" data-link>Services</a>
+    <a href="#portfolio" data-link>Portfolio</a>
+    <a href="#testimonials" data-link>Reviews</a>
+    <a href="#contact" data-link>Contact</a>
+    <a href="#contact" class="btn btn--primary btn--block">Start a project</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__grid"></div>
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="hero__noise"></div>
+  </div>
+
+  <div class="float-chip float-chip--1" aria-hidden="true"><span class="dot"></span>Reels edited today: <strong>14</strong></div>
+  <div class="float-chip float-chip--2" aria-hidden="true">▶ 02:14:08</div>
+  <div class="float-chip float-chip--3" aria-hidden="true">🎬 Now grading: <strong>Anime Edit_07</strong></div>
+
+  <div class="hero__inner container">
+    <p class="eyebrow reveal" data-reveal>
+      <span class="eyebrow__code">00:01</span> Video Editing &amp; Social Media Marketing Agency
+    </p>
+    <h1 class="hero__title reveal" data-reveal>
+      We cut, grade &amp; ship<br> content that <span class="text-gradient">stops the scroll.</span>
+    </h1>
+    <p class="hero__desc reveal" data-reveal>
+      Editkaro.in is a frame-by-frame studio for creators and brands — short-form reels,
+      long-form YouTube, gaming highlights, football edits, ad films and anime AMVs,
+      cut fast and finished premium.
+    </p>
+    <div class="hero__cta reveal" data-reveal>
+      <a href="#portfolio" class="btn btn--primary btn--lg">
+        <span>View our work</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn btn--ghost btn--lg">Book a call</a>
+    </div>
+
+    <div class="hero__marquee reveal" data-reveal aria-hidden="true">
+      <div class="marquee__track">
+        <span>SHORT-FORM</span><span>LONG-FORM</span><span>GAMING</span><span>FOOTBALL</span><span>ECOMMERCE</span><span>DOCUMENTARY</span><span>COLOR GRADE</span><span>ANIME</span><span>ADS</span>
+        <span>SHORT-FORM</span><span>LONG-FORM</span><span>GAMING</span><span>FOOTBALL</span><span>ECOMMERCE</span><span>DOCUMENTARY</span><span>COLOR GRADE</span><span>ANIME</span><span>ADS</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>Scroll
+  </a>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about section" id="about">
+  <div class="container">
+    <p class="eyebrow"><span class="eyebrow__code">00:02</span> What we do</p>
+    <h2 class="section__title reveal" data-reveal>Five crafts. One <span class="text-gradient">timeline.</span></h2>
+    <p class="section__lead reveal" data-reveal>
+      Every project moves through the same disciplined pipeline — story, cut, motion, grade, sound —
+      so whether it's a 9-second reel or a 20-minute documentary, it feels intentional.
+    </p>
+
+    <div class="about-grid">
+      <article class="about-card reveal" data-reveal>
+        <div class="about-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Video Editing</h3>
+        <p>Precision cuts, pacing and story structure across every format and length.</p>
+      </article>
+      <article class="about-card reveal" data-reveal>
+        <div class="about-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 11l18-7-7 18-3-8-8-3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Social Media Marketing</h3>
+        <p>Platform-native strategy so every upload is built for how people actually watch.</p>
+      </article>
+      <article class="about-card reveal" data-reveal>
+        <div class="about-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Branding</h3>
+        <p>Consistent visual identity — type, color, motion language — across every channel.</p>
+      </article>
+      <article class="about-card reveal" data-reveal>
+        <div class="about-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Motion Graphics</h3>
+        <p>Kinetic titles, animated lower-thirds and VFX that add polish without noise.</p>
+      </article>
+      <article class="about-card reveal" data-reveal>
+        <div class="about-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M17 9l4-2v10l-4-2" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Content Creation</h3>
+        <p>Shot-list to final export — full production support when you need more than editing.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats section" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal" data-reveal>
+        <span class="stat__num" data-count="500" data-suffix="+">0</span>
+        <span class="stat__label">Videos Edited</span>
+      </div>
+      <div class="stat reveal" data-reveal>
+        <span class="stat__num" data-count="150" data-suffix="+">0</span>
+        <span class="stat__label">Happy Clients</span>
+      </div>
+      <div class="stat reveal" data-reveal>
+        <span class="stat__num" data-count="25" data-suffix="M+">0</span>
+        <span class="stat__label">Views Generated</span>
+      </div>
+      <div class="stat reveal" data-reveal>
+        <span class="stat__num" data-count="5" data-suffix="+">0</span>
+        <span class="stat__label">Years Experience</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services section" id="services">
+  <div class="container">
+    <p class="eyebrow"><span class="eyebrow__code">00:03</span> Services</p>
+    <h2 class="section__title reveal" data-reveal>Built for every <span class="text-gradient">deliverable.</span></h2>
+
+    <div class="services-grid">
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">01</span>
+        <h3>Video Editing</h3>
+        <p>Narrative-first edits with clean pacing for any runtime.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">02</span>
+        <h3>Motion Graphics</h3>
+        <p>Animated titles, transitions and brand-consistent VFX layers.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">03</span>
+        <h3>Reels Editing</h3>
+        <p>Hook-driven vertical cuts optimized for retention on Reels &amp; Shorts.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">04</span>
+        <h3>Ads Editing</h3>
+        <p>Performance-focused edits with clear CTAs and A/B-ready variants.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">05</span>
+        <h3>YouTube Editing</h3>
+        <p>Retention-mapped long-form edits, thumbnails and chapter markers.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">06</span>
+        <h3>Color Grading</h3>
+        <p>Cinematic looks and consistent color science across a series.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">07</span>
+        <h3>Branding</h3>
+        <p>Visual systems that keep every post recognizably yours.</p>
+      </article>
+      <article class="service-card reveal" data-reveal>
+        <span class="service-card__num">08</span>
+        <h3>Social Media Management</h3>
+        <p>Calendar, captions and posting cadence handled end to end.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<section class="portfolio section" id="portfolio">
+  <div class="container">
+    <p class="eyebrow"><span class="eyebrow__code">00:04</span> Portfolio</p>
+    <h2 class="section__title reveal" data-reveal>Selected <span class="text-gradient">cuts.</span></h2>
+    <p class="section__lead reveal" data-reveal>Every category we shoot, cut and grade — filter or search to find one.</p>
+
+    <div class="portfolio-toolbar reveal" data-reveal>
+      <div class="filters" id="filters" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="short-form" role="tab" aria-selected="false">Short Form</button>
+        <button class="filter-btn" data-filter="long-form" role="tab" aria-selected="false">Long Form</button>
+        <button class="filter-btn" data-filter="gaming" role="tab" aria-selected="false">Gaming</button>
+        <button class="filter-btn" data-filter="football" role="tab" aria-selected="false">Football</button>
+        <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">eCommerce Ads</button>
+        <button class="filter-btn" data-filter="documentary" role="tab" aria-selected="false">Documentary</button>
+        <button class="filter-btn" data-filter="color-grading" role="tab" aria-selected="false">Color Grading</button>
+        <button class="filter-btn" data-filter="anime" role="tab" aria-selected="false">Anime</button>
+        <button class="filter-btn" data-filter="ads" role="tab" aria-selected="false">Ads</button>
+      </div>
+
+      <div class="search-box">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input type="search" id="searchInput" placeholder="Search by title or category…" aria-label="Search portfolio projects">
+      </div>
+    </div>
+
+    <p class="portfolio-empty" id="portfolioEmpty" hidden>No projects match your search. Try a different keyword.</p>
+
+    <div class="portfolio-grid" id="portfolioGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="why section" id="why">
+  <div class="container">
+    <p class="eyebrow"><span class="eyebrow__code">00:05</span> Why Editkaro</p>
+    <h2 class="section__title reveal" data-reveal>Why creators <span class="text-gradient">stick around.</span></h2>
+
+    <div class="why-grid">
+      <article class="why-card reveal" data-reveal>
+        <div class="why-card__icon">⚡</div>
+        <h3>Fast Delivery</h3>
+        <p>Standard turnaround in 24–72 hours, rush lanes available.</p>
+      </article>
+      <article class="why-card reveal" data-reveal>
+        <div class="why-card__icon">♾️</div>
+        <h3>Unlimited Revisions</h3>
+        <p>We refine until the cut actually feels right — no cap on rounds.</p>
+      </article>
+      <article class="why-card reveal" data-reveal>
+        <div class="why-card__icon">🎨</div>
+        <h3>Creative Editing</h3>
+        <p>Not just trimming — real storytelling, pacing and sound design.</p>
+      </article>
+      <article class="why-card reveal" data-reveal>
+        <div class="why-card__icon">🧑‍💻</div>
+        <h3>Professional Team</h3>
+        <p>Dedicated editors who learn your channel's tone and stick with it.</p>
+      </article>
+      <article class="why-card reveal" data-reveal>
+        <div class="why-card__icon">💰</div>
+        <h3>Affordable Pricing</h3>
+        <p>Studio-quality output at rates built for creators and growing brands.</p>
+      </article>
+      <article class="why-card reveal" data-reveal>
+        <div class="why-card__icon">🏆</div>
+        <h3>High Quality</h3>
+        <p>Broadcast-grade color, sound and export specs on every delivery.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <p class="eyebrow"><span class="eyebrow__code">00:06</span> Reviews</p>
+    <h2 class="section__title reveal" data-reveal>Clients on the <span class="text-gradient">record.</span></h2>
+  </div>
+
+  <div class="testi-viewport reveal" data-reveal>
+    <div class="testi-track" id="testiTrack">
+      <!-- slides injected by JS, but keep a static base set here too -->
+    </div>
+  </div>
+
+  <div class="testi-dots" id="testiDots"></div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__code">00:07</span> Contact</p>
+      <h2 class="section__title">Let's cut something <span class="text-gradient">great.</span></h2>
+      <p class="section__lead">Tell us about your channel or brand — we'll reply within one business day with a plan and quote.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-list__icon">✉️</span>
+          <div><strong>Email</strong><a href="mailto:hello@editkaro.in">hello@editkaro.in</a></div>
+        </li>
+        <li>
+          <span class="contact-list__icon">📞</span>
+          <div><strong>Phone</strong><a href="tel:+911234567890">+91 12345 67890</a></div>
+        </li>
+        <li>
+          <span class="contact-list__icon">📍</span>
+          <div><strong>Location</strong><span>Remote-first · India</span></div>
+        </li>
+      </ul>
+
+      <div class="social-row">
+        <a href="#" aria-label="Instagram" class="social-icon">IG</a>
+        <a href="#" aria-label="YouTube" class="social-icon">YT</a>
+        <a href="#" aria-label="LinkedIn" class="social-icon">IN</a>
+        <a href="#" aria-label="X / Twitter" class="social-icon">X</a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" data-reveal id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Your full name">
+        <span class="form-error" data-error-for="cf-name"></span>
+      </div>
+      <div class="form-row">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <span class="form-error" data-error-for="cf-email"></span>
+      </div>
+      <div class="form-row">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" required placeholder="Tell us about your project…"></textarea>
+        <span class="form-error" data-error-for="cf-message"></span>
+      </div>
+      <button type="submit" class="btn btn--primary btn--lg btn--block">
+        <span>Send message</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form-success" id="formSuccess" role="status" hidden>Thanks — your message has been queued. We'll reply within one business day.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="nav__logo">
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="32" height="32" rx="9" stroke="url(#gradLogo2)" stroke-width="1.5"/>
+          <path d="M13 10.5L23 17L13 23.5V10.5Z" fill="url(#gradLogo2)"/>
+          <defs>
+            <linearGradient id="gradLogo2" x1="1" y1="1" x2="33" y2="33" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF4D2E"/><stop offset="1" stop-color="#7B61FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Editkaro<em>.in</em></span>
+      </a>
+      <p>Frame by frame, we build attention. A premium video editing &amp; social media marketing studio.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#portfolio" data-footer-filter="short-form">Short-form Videos</a>
+      <a href="#portfolio" data-footer-filter="gaming">Gaming Edits</a>
+      <a href="#portfolio" data-footer-filter="football">Football Edits</a>
+      <a href="#portfolio" data-footer-filter="anime">Anime AMVs</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram" class="social-icon">IG</a>
+        <a href="#" aria-label="YouTube" class="social-icon">YT</a>
+        <a href="#" aria-label="LinkedIn" class="social-icon">IN</a>
+        <a href="#" aria-label="X / Twitter" class="social-icon">X</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>© <span id="year"></span> Editkaro.in — All rights reserved.</p>
+    <p>Designed &amp; built with care for creators.</p>
+  </div>
+</footer>
+
+<!-- ===================== VIDEO LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Video preview">
+  <div class="lightbox__backdrop" data-close></div>
+  <div class="lightbox__panel">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close video">✕</button>
+    <div class="lightbox__frame" id="lightboxFrame"></div>
+  </div>
+</div>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/filter.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
